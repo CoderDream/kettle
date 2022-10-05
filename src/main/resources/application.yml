@@ -9,13 +9,15 @@ spring:
       date-format: yyyy-MM-dd HH:mm:ss
       time-zone: GMT+8
   datasource:
-      url: jdbc:mysql://127.0.0.1:3306/kettle?useUnicode=true&characterEncoding=UTF8&useSSL=false
+      url: jdbc:mysql://171.113.161.31:33016/kettle?useUnicode=true&characterEncoding=UTF8&useSSL=false
       username: root
       password: 123456
       type: com.zaxxer.hikari.HikariDataSource
-      driver-class-name: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.cj.jdbc.Driver
 env:
   databases:
+    - dbfrom
+    - dbto
     - taxi-user
     - taxi-account
     - taxi-trade
@@ -35,17 +37,17 @@ env:
     - TEST
   db-settings:
     - name: LOCAL
-      host: *****
-      port: 3306
-      user: *****
-      password: *****
+      host: 171.113.161.31
+      port: 33016
+      user: root
+      password: 123456
     - name: TEST
-      host: *****
-      port: 3306
-      user: *****
-      password: *****
+      host: 171.113.161.31
+      port: 33016
+      user: root
+      password: 123456
     - name: PROD
-      host: *****
-      port: 3306
-      user: *****
-      password: *****
+      host: 171.113.161.31
+      port: 33016
+      user: root
+      password: 123456

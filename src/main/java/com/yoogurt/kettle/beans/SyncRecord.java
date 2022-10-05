@@ -13,31 +13,31 @@ import java.util.Date;
 public class SyncRecord {
 
     @Id
-    @Column(name="sync")
+    @Column(name = "sync")
     private String sync;
 
-    @Column(name="from_db")
+    @Column(name = "from_db")
     private String fromDb;
 
-    @Column(name="to_db")
+    @Column(name = "to_db")
     private String toDb;
 
-    @Column(name="user")
+    @Column(name = "user")
     private String user;
 
-    @Column(name="token")
+    @Column(name = "token")
     private String token;
 
-    @Column(name="ipv4")
+    @Column(name = "ipv4")
     private String ipv4;
 
-    @Column(name="status")
+    @Column(name = "status")
     private String status;
 
-    @Column(name="gmt_create")
+    @Column(name = "gmt_create")
     private Date gmtCreate;
 
-    @Column(name="gmt_modify")
+    @Column(name = "gmt_modify")
     private Date gmtModify;
 
 }

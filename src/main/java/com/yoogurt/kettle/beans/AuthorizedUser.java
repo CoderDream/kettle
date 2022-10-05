@@ -16,18 +16,18 @@ public class AuthorizedUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="user")
+    @Column(name = "user")
     private String user;
 
-    @Column(name="token")
+    @Column(name = "token")
     private String token;
 
-    @Column(name="status")
+    @Column(name = "status")
     private String status;
 
-    @Column(name="gmt_create")
+    @Column(name = "gmt_create")
     private Date gmtCreate;
 
-    @Column(name="gmt_modify")
+    @Column(name = "gmt_modify")
     private Date gmtModify;
 }

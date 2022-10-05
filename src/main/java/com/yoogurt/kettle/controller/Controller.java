@@ -16,6 +16,7 @@ public class Controller {
         modelMap.addAttribute("databases", envConfig.getDatabases());
         modelMap.addAttribute("fromDbs", envConfig.getFromDbs());
         modelMap.addAttribute("toDbs", envConfig.getToDbs());
+        com.mysql.cj.jdbc.Driver a = null;
         return "index";
     }
 }
